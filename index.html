@@ -88,6 +88,17 @@ article.post li{margin-bottom:6px}
 .figure strong{font-family:var(--display);font-size:28px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
 .figure span{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .next{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--display);font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px 20px;margin:6px 0 0;padding:16px 0 0;border-top:2px solid var(--fg)}
+.stats div{display:flex;flex-direction:column}
+.stats strong{font-family:var(--display);font-size:26px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.stats span{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.timeline ul{margin:6px 0 0;padding-left:18px;font-size:16px;color:var(--fg)}
+.timeline ul li{display:list-item;border:0;padding:0;margin-bottom:3px}
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.facts li{display:grid;grid-template-columns:130px 1fr;gap:4px 18px;padding:12px 0;border-top:1px solid var(--line);font-size:16.5px}
+.facts .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:3px}
+@media (max-width:520px){.facts li{grid-template-columns:1fr}}
+h3.sub{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:28px 0 10px}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--muted)}
 </style>
 
@@ -98,8 +109,14 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-fa
     <span class="eyebrow">Logistics Manager · International freight &amp; supply chain</span>
     <h1><a href="#">Sunil Kumar Chaurotiya</a></h1>
     <p class="lede">Nine years moving cargo across ocean lanes between Asia, Africa, the US and the Middle East. These are the projects I've run and what each one taught me.</p>
+    <div class="stats">
+      <div><strong>9+</strong><span>Years in freight</span></div>
+      <div><strong>20,000</strong><span>TEU a year handled</span></div>
+      <div><strong>Up to 30%</strong><span>Freight cost cut</span></div>
+      <div><strong>9</strong><span>African markets</span></div>
+    </div>
     <nav class="top" aria-label="Sections">
-      <a href="#stories">Stories</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      <a href="#stories">Stories</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -112,6 +129,16 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-fa
           <div class="meta"><span class="lane">CN <b>→</b> East &amp; West Africa</span><span>2025–2026</span><span class="result">Up to 30% lower freight cost</span></div>
           <h3>Rebuilding freight procurement for EV cargo bound for Africa</h3>
           <p>Electric bikes, lithium-ion batteries and EV trucks, moved by container, RORO and break-bulk, with the buying process rebuilt from scratch.</p>
+        </a>
+        <a class="post-link" href="#dd-control">
+          <div class="meta"><span class="lane">CN <b>→</b> Africa · D&amp;D</span><span>2025–2026</span><span class="result">Every charge traced to a cause</span></div>
+          <h3>Taking ownership of container demurrage and detention</h3>
+          <p>Free time is money on a timer. A daily tracker, invoice checks and root-cause reviews turned D&amp;D from a surprise into a managed cost.</p>
+        </a>
+        <a class="post-link" href="#kpi-scorecards">
+          <div class="meta"><span class="lane">Carriers · forwarders · team</span><span>2025–2026</span><span class="result">Monthly KPI dashboards</span></div>
+          <h3>Building KPIs and scorecards a logistics team can run on</h3>
+          <p>A KPI framework across four logistics roles, carrier and forwarder scorecards, and quarterly reviews with partners.</p>
         </a>
         <a class="post-link" href="#scrap-volume">
           <div class="meta"><span class="lane">40' HC · multi-carrier</span><span>2018–2022</span><span class="result">20,000 TEU a year</span></div>
@@ -140,23 +167,46 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-fa
       <h2>About</h2>
       <p>I'm a logistics manager with nine years in international freight forwarding and supply chain operations. My work has covered ocean freight procurement, carrier negotiation, import and export compliance, and the day-to-day running of shipments across Asia, Africa, the US and the Middle East.</p>
       <p>I've worked on both sides of the table. On the forwarder side I've worked as a key account manager and branch manager. On the shipper side I've managed logistics for a manufacturer. That mix shapes how I work: I know what a carrier needs to quote well, and what a business needs to trust the number.</p>
-      <p>I studied mechanical engineering, then trained in supply chain and logistics and in materials and operations management. I'm open to roles in India and internationally.</p>
+      <p>I studied mechanical engineering, then trained in supply chain and logistics and in materials and operations management.</p>
+      <h3 class="sub">What I'm looking for</h3>
+      <p>Logistics Manager, freight procurement and EXIM roles, in India, Africa, the Middle East or further afield. I'm open to international relocation.</p>
+      <h3 class="sub">Markets I've worked</h3>
+      <p>East Africa: Kenya, Uganda, Rwanda, Tanzania. West and Central Africa: Nigeria, Sierra Leone, Togo, Gabon, Cameroon. Origin side: China, India, the US.</p>
+      <h3 class="sub">Skills</h3>
       <ul class="skills" aria-label="Skills">
-        <li>Ocean freight procurement</li><li>RFQ &amp; tender management</li><li>Carrier negotiation</li><li>Demurrage &amp; detention control</li><li>Import/export compliance</li><li>EAC · ECOWAS · CEMAC · SADC</li><li>RORO &amp; break-bulk</li><li>Dangerous goods (Li-ion)</li><li>SOP design</li><li>KPI dashboards</li><li>SAP ERP</li><li>ICEGATE</li>
+        <li>Ocean freight procurement</li><li>RFQ &amp; tender management</li><li>Carrier negotiation</li><li>Rate benchmarking</li><li>Carrier &amp; forwarder scorecards</li><li>Demurrage &amp; detention control</li><li>Freight invoice reconciliation</li><li>Import/export compliance</li><li>EAC · ECOWAS · CEMAC · SADC</li><li>Export documentation &amp; CHA coordination</li><li>RORO &amp; break-bulk</li><li>SOC containers</li><li>Dangerous goods (Li-ion)</li><li>SOP design</li><li>KPI dashboards</li><li>Quarterly business reviews</li><li>Team leadership</li><li>SAP ERP</li><li>ICEGATE</li><li>DGFT</li>
       </ul>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <ol class="timeline">
-        <li><span class="when">2025–2026</span><div><div class="role">Logistics Manager</div><div class="org">Electric-mobility manufacturer · Asia–Africa supply chain</div></div></li>
-        <li><span class="when">2024–2025</span><div><div class="role">Key Account Manager, Operations</div><div class="org">ISS Global Forwarding · Gurgaon</div></div></li>
-        <li><span class="when">2022–2024</span><div><div class="role">Branch Manager</div><div class="org">Fairmacs Shipping &amp; Transport · Gandhidham</div></div></li>
-        <li><span class="when">2018–2022</span><div><div class="role">Logistics Specialist</div><div class="org">Premier Info Assist · Jodhpur</div></div></li>
-        <li><span class="when">2017–2018</span><div><div class="role">Senior Executive, Distribution &amp; Logistics</div><div class="org">Holisol Logistics · Delhi</div></div></li>
-        <li><span class="when">2016–2017</span><div><div class="role">Officer, Logistics &amp; Dispatch</div><div class="org">Welspun India · Anjar</div></div></li>
-        <li><span class="when">2015–2016</span><div><div class="role">Quality Analyst</div><div class="org">Quickdel Logistics</div></div></li>
+        <li><span class="when">May 2025 – Jul 2026</span><div><div class="role">Logistics Manager</div><div class="org">Electric-mobility manufacturer · Pune · Asia–Africa supply chain</div>
+          <ul><li>Rebuilt ocean freight buying around a structured RFQ process across 20+ empaneled agents; up to 30% lower freight cost on retendered lanes.</li><li>Wrote SOPs for freight procurement, vendor evaluation and RFQ approval.</li><li>Owned container D&amp;D, carrier scorecards, KPI dashboards, partner QBRs and freight invoice reconciliation with Finance.</li></ul></div></li>
+        <li><span class="when">Aug 2024 – Apr 2025</span><div><div class="role">Key Account Manager, Operations</div><div class="org">ISS Global Forwarding · Gurgaon</div>
+          <ul><li>Ran day-to-day operations for key shipper accounts on the forwarder side, including food and agri clients.</li></ul></div></li>
+        <li><span class="when">Jun 2022 – Jul 2024</span><div><div class="role">Branch Manager</div><div class="org">Fairmacs Shipping &amp; Transport · Gandhidham</div>
+          <ul><li>Led the branch serving Kandla and Mundra; operational efficiency up 15%.</li></ul></div></li>
+        <li><span class="when">May 2018 – May 2022</span><div><div class="role">Logistics Specialist</div><div class="org">Premier Info Assist · Jodhpur</div>
+          <ul><li>Export logistics for a US recycling client: about 20,000 TEU a year, rates negotiated directly with CMA CGM, Hapag-Lloyd, Maersk, MSC and COSCO.</li><li>Led a team of 20; overall logistics cost down 10%. Delivered a 42-container SOC move, Houston to Shanghai.</li></ul></div></li>
+        <li><span class="when">Nov 2017 – May 2018</span><div><div class="role">Senior Executive, Distribution &amp; Logistics</div><div class="org">Holisol Logistics · Delhi</div>
+          <ul><li>Improved on-time delivery by 20%.</li></ul></div></li>
+        <li><span class="when">Jul 2016 – Jun 2017</span><div><div class="role">Officer, Logistics &amp; Dispatch</div><div class="org">Welspun India · Anjar</div>
+          <ul><li>Export dispatch for Walmart, Kohl's, Kmart and JC Penney; delivery time down 25%.</li></ul></div></li>
+        <li><span class="when">Oct 2015 – Jun 2016</span><div><div class="role">Quality Analyst</div><div class="org">Quickdel Logistics</div>
+          <ul><li>Reduced defects by 18%.</li></ul></div></li>
       </ol>
+    </section>
+
+    <section id="education">
+      <h2>Education &amp; training</h2>
+      <ul class="facts">
+        <li><span class="when">2017</span><div><strong>Certificate IV, Materials &amp; Operations Management</strong><br><span style="color:var(--muted)">SCDL, Pune</span></div></li>
+        <li><span class="when">2016</span><div><strong>Diploma, Supply Chain &amp; Logistics</strong><br><span style="color:var(--muted)">Think-link Learning Institute, Gurugram</span></div></li>
+        <li><span class="when">2009–2013</span><div><strong>B.Tech, Mechanical Engineering</strong><br><span style="color:var(--muted)">JIET, Jodhpur</span></div></li>
+      </ul>
+      <h3 class="sub">Languages</h3>
+      <ul class="skills" aria-label="Languages"><li>English</li><li>Hindi</li><li>Gujarati</li><li>Rajasthani</li></ul>
     </section>
 
     <section id="contact">
@@ -186,6 +236,48 @@ footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-fa
     <p>Freight costs came down by up to 30% on the lanes we retendered. Just as important, the business could see why a rate was what it was, and which agents were performing.</p>
     <h3>What I'd tell someone else</h3>
     <p>Lithium-ion cargo changes the conversation. Batteries ship as dangerous goods (Class 9), and not every agent, line or port handles them the same way. Put the DG questions in the RFQ itself. If they come up at booking, your cheapest quote can quietly turn into your most expensive one.</p>
+    <div class="next"><a href="#dd-control">Next story: taking ownership of demurrage and detention →</a></div>
+  </article>
+
+  <article class="post" id="dd-control" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">CN <b>→</b> East &amp; West Africa</span><span>2025–2026</span></div>
+    <h2>Taking ownership of container demurrage and detention</h2>
+    <div class="figure"><div><strong>Daily</strong><span>Free-time tracking</span></div><div><strong>4</strong><span>Stage control process</span></div><div><strong>Every</strong><span>Charge root-caused</span></div></div>
+    <h3>The situation</h3>
+    <p>Cargo bound for African ports can sit longer than planned: customs holds, document gaps, slow clearance or a consignee who isn't ready. Each day past free time adds demurrage at the port and detention on the box. When nobody owns that clock, the charges show up weeks later as invoices that are hard to question.</p>
+    <h3>What I did</h3>
+    <ul>
+      <li>Set up a daily D&amp;D tracker so every container's free time was visible before it ran out, not after.</li>
+      <li>Ran a four-stage process: track free time, flag containers at risk, validate every D&amp;D invoice against the actual dates, and review the root cause of each charge.</li>
+      <li>Used the root-cause findings to fix the step that caused the delay, whether documents, clearance or delivery planning.</li>
+      <li>Reconciled freight and D&amp;D invoices with Finance so the numbers in the books matched what had actually happened.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>D&amp;D stopped being a surprise. Charges that weren't owed were challenged, and the ones that were owed came with a reason the business could act on.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>Negotiate free time with the same energy as the freight rate. On slow-clearing lanes, a few extra free days can be worth more than a lower ocean rate.</p>
+    <div class="next"><a href="#kpi-scorecards">Next story: KPIs and scorecards a logistics team can run on →</a></div>
+  </article>
+
+  <article class="post" id="kpi-scorecards" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">Carriers · forwarders · team</span><span>2025–2026</span></div>
+    <h2>Building KPIs and scorecards a logistics team can run on</h2>
+    <div class="figure"><div><strong>4</strong><span>Logistics roles covered</span></div><div><strong>Monthly</strong><span>KPI dashboards</span></div><div><strong>Quarterly</strong><span>Partner reviews</span></div></div>
+    <h3>The situation</h3>
+    <p>A growing logistics function with partners in many countries needs a shared way to answer simple questions. Are we on time? Are we paying the right rate? Which partner is performing? Without agreed measures, every review turns into an argument about whose numbers are right.</p>
+    <h3>What I did</h3>
+    <ul>
+      <li>Built a KPI framework covering four logistics roles, so each person knew which numbers they owned.</li>
+      <li>Reported the KPIs in monthly dashboards: volumes by lane and port, carrier allocation and shipment milestones.</li>
+      <li>Scored carriers and forwarders on a common scorecard, and benchmarked rates lane by lane.</li>
+      <li>Ran quarterly business reviews with logistics partners, using the scorecards as the agenda.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>Reviews moved from opinions to evidence. Partners knew how they were measured, and the team could see where their own work was slipping before anyone else pointed it out.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>Fewer KPIs, owned by named people, beat a long dashboard nobody acts on. If a number has no owner, drop it.</p>
     <div class="next"><a href="#scrap-volume">Next story: 20,000 TEU a year of scrap exports →</a></div>
   </article>
 
