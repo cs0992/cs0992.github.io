@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sunil Kumar Chaurotiya, Logistics Manager. Project stories from nine years in international freight and supply chain.">
+<meta property="og:title" content="Sunil Kumar Chaurotiya">
+<meta property="og:description" content="Logistics Manager. Project stories from nine years in international freight and supply chain.">
+<meta property="og:type" content="website">
+<title>Sunil Kumar Chaurotiya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+/* Layout: a single reading column like a voyage log; each story carries its trade lane as UN/LOCODE port codes. */
+:root{
+  --bg:#f3f5f6; --surface:#ffffff; --fg:#16212b; --muted:#566370; --line:#d6dde2;
+  --accent:#0b5a85; --signal:#c46a1c; --chip:#e6eef3;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f161c; --surface:#151f27; --fg:#e3e9ee; --muted:#93a2ae; --line:#26343f;
+  --accent:#6cb6e0; --signal:#e79a52; --chip:#1c2a35; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f161c; --surface:#151f27; --fg:#e3e9ee; --muted:#93a2ae; --line:#26343f;
+  --accent:#6cb6e0; --signal:#e79a52; --chip:#1c2a35; color-scheme:dark}
+
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.65}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+.mono{font-family:var(--mono)}
+
+header.site{display:flex;flex-direction:column;gap:14px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+header.site h1{font-size:clamp(34px,7vw,48px);font-weight:800;letter-spacing:-.01em}
+header.site h1 a{color:inherit;text-decoration:none}
+.lede{font-size:19px;color:var(--fg);max-width:60ch;margin:0}
+nav.top{display:flex;flex-wrap:wrap;gap:6px 20px;font-family:var(--display);font-weight:500;font-size:15px}
+nav.top a{text-decoration:none;color:var(--muted)}
+nav.top a:hover{color:var(--accent)}
+
+section{padding-top:40px}
+section > h2{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+
+.posts{display:flex;flex-direction:column}
+.post-link{display:grid;grid-template-columns:1fr;gap:6px;padding:20px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
+.post-link:last-child{border-bottom:1px solid var(--line)}
+.post-link h3{font-size:22px;font-weight:700;color:var(--fg)}
+.post-link:hover h3{color:var(--accent)}
+.post-link p{margin:0;color:var(--muted);font-size:16.5px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.lane{background:var(--chip);color:var(--fg);padding:2px 8px;border-radius:3px;white-space:nowrap}
+.lane b{color:var(--signal);font-weight:500;padding:0 4px}
+.result{color:var(--accent);font-weight:500}
+
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.timeline li{display:grid;grid-template-columns:130px 1fr;gap:4px 18px;padding:12px 0;border-top:1px solid var(--line)}
+.timeline .when{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
+.timeline .role{font-family:var(--display);font-weight:700;font-size:16.5px}
+.timeline .org{color:var(--muted);font-size:16px}
+@media (max-width:520px){.timeline li{grid-template-columns:1fr}}
+
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.skills li{font-family:var(--mono);font-size:13px;border:1px solid var(--line);padding:4px 10px;border-radius:3px}
+
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.contact code{font-family:var(--mono);font-size:15px;background:var(--surface);border:1px solid var(--line);padding:6px 10px;border-radius:3px;user-select:all;word-break:break-all}
+button.copy{font-family:var(--display);font-weight:500;font-size:14px;background:var(--accent);color:var(--bg);border:0;padding:8px 14px;border-radius:3px;cursor:pointer}
+
+article.post{padding-top:28px}
+.back{font-family:var(--display);font-size:15px;text-decoration:none}
+article.post h2{font-size:clamp(28px,5.5vw,38px);font-weight:800;margin:18px 0 12px}
+article.post h3{font-size:19px;font-weight:700;margin:30px 0 6px}
+article.post p{margin:0 0 14px;max-width:65ch}
+article.post ul{margin:0 0 14px;padding-left:22px;max-width:62ch}
+article.post li{margin-bottom:6px}
+.figure{display:flex;flex-wrap:wrap;gap:10px 28px;margin:22px 0;padding:16px 0;border-top:2px solid var(--fg);border-bottom:1px solid var(--line)}
+.figure div{display:flex;flex-direction:column}
+.figure strong{font-family:var(--display);font-size:28px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.figure span{font-family:var(--mono);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.next{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--display);font-size:15px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <span class="eyebrow">Logistics Manager · International freight &amp; supply chain</span>
+    <h1><a href="#">Sunil Kumar Chaurotiya</a></h1>
+    <p class="lede">Nine years moving cargo across ocean lanes between Asia, Africa, the US and the Middle East. These are the projects I've run and what each one taught me.</p>
+    <nav class="top" aria-label="Sections">
+      <a href="#stories">Stories</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HOME VIEW -->
+  <main id="home">
+    <section id="stories">
+      <h2>Project stories</h2>
+      <div class="posts">
+        <a class="post-link" href="#ev-freight-africa">
+          <div class="meta"><span class="lane">CN <b>→</b> East &amp; West Africa</span><span>2025–2026</span><span class="result">Up to 30% lower freight cost</span></div>
+          <h3>Rebuilding freight procurement for EV cargo bound for Africa</h3>
+          <p>Electric bikes, lithium-ion batteries and EV trucks, moved by container, RORO and break-bulk, with the buying process rebuilt from scratch.</p>
+        </a>
+        <a class="post-link" href="#scrap-volume">
+          <div class="meta"><span class="lane">40' HC · multi-carrier</span><span>2018–2022</span><span class="result">20,000 TEU a year</span></div>
+          <h3>Running 20,000 TEU a year of scrap exports with five carriers</h3>
+          <p>Metal and plastic scrap for a recycling client, with rates negotiated directly with the lines rather than through intermediaries.</p>
+        </a>
+        <a class="post-link" href="#soc-houston-shanghai">
+          <div class="meta"><span class="lane">USHOU <b>→</b> CNSHA</span><span>Signature project</span><span class="result">42 SOC containers</span></div>
+          <h3>Moving 42 shipper-owned containers from Houston to Shanghai</h3>
+          <p>When the box belongs to the shipper, every step the carrier normally handles becomes your problem.</p>
+        </a>
+        <a class="post-link" href="#gandhidham-branch">
+          <div class="meta"><span class="lane">INIXY · INMUN</span><span>2022–2024</span><span class="result">15% efficiency gain</span></div>
+          <h3>Running a forwarding branch next to Kandla and Mundra</h3>
+          <p>What changes when you move from managing shipments to managing a branch: the people, the port and the P&amp;L.</p>
+        </a>
+        <a class="post-link" href="#us-retail-dispatch">
+          <div class="meta"><span class="lane">INMUN <b>→</b> US retail DCs</span><span>2016–2017</span><span class="result">25% faster delivery</span></div>
+          <h3>Dispatching home textiles to US big-box retailers</h3>
+          <p>Export dispatch for retailers whose routing guides leave little room for error.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a logistics manager with nine years in international freight forwarding and supply chain operations. My work has covered ocean freight procurement, carrier negotiation, import and export compliance, and the day-to-day running of shipments across Asia, Africa, the US and the Middle East.</p>
+      <p>I've worked on both sides of the table. On the forwarder side I've worked as a key account manager and branch manager. On the shipper side I've managed logistics for a manufacturer. That mix shapes how I work: I know what a carrier needs to quote well, and what a business needs to trust the number.</p>
+      <p>I studied mechanical engineering, then trained in supply chain and logistics and in materials and operations management. I'm open to roles in India and internationally.</p>
+      <ul class="skills" aria-label="Skills">
+        <li>Ocean freight procurement</li><li>RFQ &amp; tender management</li><li>Carrier negotiation</li><li>Demurrage &amp; detention control</li><li>Import/export compliance</li><li>EAC · ECOWAS · CEMAC · SADC</li><li>RORO &amp; break-bulk</li><li>Dangerous goods (Li-ion)</li><li>SOP design</li><li>KPI dashboards</li><li>SAP ERP</li><li>ICEGATE</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li><span class="when">2025–2026</span><div><div class="role">Logistics Manager</div><div class="org">Electric-mobility manufacturer · Asia–Africa supply chain</div></div></li>
+        <li><span class="when">2024–2025</span><div><div class="role">Key Account Manager, Operations</div><div class="org">ISS Global Forwarding · Gurgaon</div></div></li>
+        <li><span class="when">2022–2024</span><div><div class="role">Branch Manager</div><div class="org">Fairmacs Shipping &amp; Transport · Gandhidham</div></div></li>
+        <li><span class="when">2018–2022</span><div><div class="role">Logistics Specialist</div><div class="org">Premier Info Assist · Jodhpur</div></div></li>
+        <li><span class="when">2017–2018</span><div><div class="role">Senior Executive, Distribution &amp; Logistics</div><div class="org">Holisol Logistics · Delhi</div></div></li>
+        <li><span class="when">2016–2017</span><div><div class="role">Officer, Logistics &amp; Dispatch</div><div class="org">Welspun India · Anjar</div></div></li>
+        <li><span class="when">2015–2016</span><div><div class="role">Quality Analyst</div><div class="org">Quickdel Logistics</div></div></li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The quickest way to reach me is by email.</p>
+      <div class="contact"><code id="email">sunil.choradia@gmail.com</code><button class="copy" id="copy-email" type="button">Copy email</button></div>
+    </section>
+  </main>
+
+  <!-- POSTS -->
+  <article class="post" id="ev-freight-africa" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">CN <b>→</b> East &amp; West Africa</span><span>2025–2026</span></div>
+    <h2>Rebuilding freight procurement for EV cargo bound for Africa</h2>
+    <div class="figure"><div><strong>Up to 30%</strong><span>Freight cost reduction</span></div><div><strong>20+</strong><span>Empaneled agents</span></div><div><strong>9</strong><span>Destination markets</span></div></div>
+    <h3>The situation</h3>
+    <p>I joined an electric-mobility manufacturer that ships electric motorcycles, lithium-ion battery modules and EV trucks from Asia to markets across East, West and Central Africa. Volumes were growing quickly, and freight was being bought shipment by shipment. Each quote was negotiated on its own, with no shared benchmark and no consistent way to compare agents.</p>
+    <h3>What I did</h3>
+    <ul>
+      <li>Built a structured RFQ process across a network of 20+ empaneled forwarding agents, so every lane was quoted against the same scope and the same timeline.</li>
+      <li>Wrote standard operating procedures for ocean freight procurement, vendor evaluation and RFQ approval, so decisions could be traced and repeated.</li>
+      <li>Set up carrier and forwarder scorecards, and benchmarked rates lane by lane.</li>
+      <li>Took ownership of container demurrage and detention: daily tracking of free time, invoice validation and root-cause review of every charge.</li>
+      <li>Matched the cargo to the right mode. Containerised for bikes and battery modules. RORO or break-bulk for trucks.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>Freight costs came down by up to 30% on the lanes we retendered. Just as important, the business could see why a rate was what it was, and which agents were performing.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>Lithium-ion cargo changes the conversation. Batteries ship as dangerous goods (Class 9), and not every agent, line or port handles them the same way. Put the DG questions in the RFQ itself. If they come up at booking, your cheapest quote can quietly turn into your most expensive one.</p>
+    <div class="next"><a href="#scrap-volume">Next story: 20,000 TEU a year of scrap exports →</a></div>
+  </article>
+
+  <article class="post" id="scrap-volume" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">40' containers · multi-carrier</span><span>2018–2022</span></div>
+    <h2>Running 20,000 TEU a year of scrap exports with five carriers</h2>
+    <div class="figure"><div><strong>20,000</strong><span>TEU per year</span></div><div><strong>5</strong><span>Carriers, direct</span></div><div><strong>10%</strong><span>Cost reduction</span></div><div><strong>20</strong><span>Team members</span></div></div>
+    <h3>The situation</h3>
+    <p>At Premier Info Assist I handled export logistics for a US recycling client shipping metal and plastic scrap, all in 40-foot containers, at around 20,000 TEU a year. At that volume, small differences in rate, free time or equipment availability add up to real money.</p>
+    <h3>What I did</h3>
+    <ul>
+      <li>Negotiated freight rates directly with CMA CGM, Hapag-Lloyd, Maersk, MSC and COSCO.</li>
+      <li>Split volume across carriers so the client was never dependent on a single line for equipment or space.</li>
+      <li>Led a team of 20 handling bookings, documentation and shipment follow-up.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>We brought overall logistics cost down by 10% while keeping volume moving.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>Volume gives you a seat at the table, but it doesn't negotiate for you. Carriers respond to a shipper who knows their own numbers: how many boxes, on which weeks, with what flexibility. Know your forecast better than the carrier does.</p>
+    <div class="next"><a href="#soc-houston-shanghai">Next story: 42 SOC containers, Houston to Shanghai →</a></div>
+  </article>
+
+  <article class="post" id="soc-houston-shanghai" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">USHOU <b>→</b> CNSHA</span><span>Premier Info Assist</span></div>
+    <h2>Moving 42 shipper-owned containers from Houston to Shanghai</h2>
+    <div class="figure"><div><strong>42</strong><span>SOC containers</span></div><div><strong>USHOU → CNSHA</strong><span>Trade lane</span></div></div>
+    <h3>The situation</h3>
+    <p>Most shipments move in carrier-owned containers (COC). The line supplies the box and takes it back. This project moved 42 shipper-owned containers (SOC) from Houston to Shanghai, and it became one of the projects I'm proudest of.</p>
+    <h3>Why SOC is different</h3>
+    <p>With SOC, the shipper owns the equipment, so the shipper owns the problems the carrier normally absorbs:</p>
+    <ul>
+      <li>The containers need to be in condition the carrier will accept for loading.</li>
+      <li>The booking has to be accepted specifically as SOC, and not every service or rate covers it.</li>
+      <li>Someone has to plan what happens to the boxes at destination.</li>
+    </ul>
+    <h3>What I'd tell someone else</h3>
+    <p>Settle the equipment questions before the freight question. A good rate on an SOC booking means nothing if the boxes are rejected at the gate.</p>
+    <div class="next"><a href="#gandhidham-branch">Next story: running a branch near Kandla and Mundra →</a></div>
+  </article>
+
+  <article class="post" id="gandhidham-branch" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">INIXY · INMUN</span><span>2022–2024</span></div>
+    <h2>Running a forwarding branch next to Kandla and Mundra</h2>
+    <div class="figure"><div><strong>15%</strong><span>Efficiency gain</span></div><div><strong>2 yrs</strong><span>Branch leadership</span></div></div>
+    <h3>The situation</h3>
+    <p>I was Branch Manager at Fairmacs Shipping &amp; Transport in Gandhidham, which serves Kandla and Mundra, two of India's busiest gateways on the west coast. The branch handled customer shipments end to end, and my job was the whole operation: the team, the customers and the branch's performance.</p>
+    <h3>What I worked on</h3>
+    <ul>
+      <li>Day-to-day coordination with customers, carriers, CHAs and port-side partners.</li>
+      <li>Building routines the team could run without me, so one person's absence didn't stall a shipment.</li>
+      <li>Watching performance and fixing the steps that slowed shipments down.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>Operational efficiency at the branch improved by 15% over my time there.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>Moving from managing shipments to managing a branch means your output is now other people's work. The most useful thing I did was make the routine predictable, so my time went to the exceptions.</p>
+    <div class="next"><a href="#us-retail-dispatch">Next story: dispatch for US big-box retailers →</a></div>
+  </article>
+
+  <article class="post" id="us-retail-dispatch" hidden>
+    <a class="back" href="#stories">← All stories</a>
+    <div class="meta" style="margin-top:18px"><span class="lane">INMUN <b>→</b> US retail DCs</span><span>2016–2017</span></div>
+    <h2>Dispatching home textiles to US big-box retailers</h2>
+    <div class="figure"><div><strong>25%</strong><span>Faster delivery</span></div><div><strong>4</strong><span>Major US retailers</span></div></div>
+    <h3>The situation</h3>
+    <p>At Welspun India in Anjar I handled export dispatch for US retail customers including Walmart, Kohl's, Kmart and JC Penney. Big-box retailers issue strict routing and compliance requirements, and a miss can mean chargebacks or delayed acceptance at the distribution centre.</p>
+    <h3>What I worked on</h3>
+    <ul>
+      <li>Planning dispatches against each retailer's requirements and timelines.</li>
+      <li>Coordinating between production, packing and the outbound logistics team so cargo left on time.</li>
+    </ul>
+    <h3>The result</h3>
+    <p>Delivery time came down by 25%.</p>
+    <h3>What I'd tell someone else</h3>
+    <p>For retail exports, the customer's rulebook is the plan. Read the routing guide before production finishes, not after the cargo is packed.</p>
+    <div class="next"><a href="#ev-freight-africa">Back to the first story →</a></div>
+  </article>
+
+  <footer>© 2026 Sunil Kumar Chaurotiya · Greater Noida, India · Open to international relocation</footer>
+</div>
+
+<script>
+(function(){
+  var posts = Array.prototype.slice.call(document.querySelectorAll('article.post'));
+  var home = document.getElementById('home');
+  function route(){
+    var id = (location.hash || '').slice(1);
+    var post = posts.filter(function(p){return p.id === id;})[0];
+    posts.forEach(function(p){ p.hidden = (p !== post); });
+    home.hidden = !!post;
+    if (post) { window.scrollTo(0,0); return; }
+    var target = id && document.getElementById(id);
+    if (target) target.scrollIntoView(); else window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange', route);
+  route();
+  var btn = document.getElementById('copy-email');
+  btn.addEventListener('click', function(){
+    var text = document.getElementById('email').textContent;
+    function selectIt(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email')); var s=getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent='Selected, press Ctrl+C'; }
+    try {
+      navigator.clipboard.writeText(text).then(function(){ btn.textContent='Copied'; }, selectIt);
+    } catch(e){ selectIt(); }
+  });
+})();
+</script>
+
+</body>
+</html>
